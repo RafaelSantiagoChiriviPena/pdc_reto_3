@@ -130,7 +130,7 @@ Inicio
 Fin
 ```
 ```mermaid
-graph TD
+flowchart TD
 A(inicio)
 B[leer n]
 C[raiz_cercana = 1]
