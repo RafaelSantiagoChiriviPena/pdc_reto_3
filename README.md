@@ -33,18 +33,18 @@ Fin
 ```
 ```mermaid
 flowchart TD;
-    A(inicio)
-    B[Leer número n]
-    C[i = 2]
-    D[t = 2]
-    E[Hacer lista desde i hasta n]
-    F[Hacer lista desde t hasta i^0.5]
-    G{¿i%t = 0?}
-    H[No es primo]
-    I{¿t = i^0.5-1?}
-    J[Es primo]
-    K{¿i = n?}
-    L(fin)
+    A(inicio);
+    B[Leer número n];
+    C[i = 2];
+    D[t = 2],
+    E[Hacer lista desde i hasta n];
+    F[Hacer lista desde t hasta i^0.5];
+    G{¿i%t = 0?};
+    H[No es primo];
+    I{¿t = i^0.5-1?};
+    J[Es primo];
+    K{¿i = n?};
+    L(fin);
 
     A --> B;
     B --> C;
