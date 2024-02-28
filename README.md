@@ -31,7 +31,7 @@ Inicio
     Fin Para
 Fin
 ```
-```Mermaid
+```mermaid
 graph TD;
     A(inicio);
     B[Leer número n];
