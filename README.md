@@ -167,12 +167,14 @@ Z[raiz_n = raiz_cercana * 10+ valor_cercano + residuo2 / 2*raiz_cercana]
 
 
 AA[2_digitos_n = n // divisor / 10]
+
+
 AB{¿raiz_cercana < 2_digitos_n^0.5?}
 AC{2_digitos_n - raiz_cercana^2 > 0?}
 AD[raiz_cercana = raiz_cercana + 1]
 AE[residuo1 = 2_digitos_n - raiz_cercana^2 * 10^numero_digitos_n-1 + n - 2_digitos_n * 10^numero_digitos_n-1]
-AF{¿20*raiz_cercana + valor_cercano * valor_cercano < residuo1?}
-AG{¿residuo1 - 20*raiz_cercana + valor_cercano * valor_cercano > 0?}
+AF{¿20*raiz_cercana + valor_cercano * valor_cercano > 0?}
+AG{¿residuo1 - 20*raiz_cercana + valor_cercano * valor_cercano < residuo1?}
 AH[valor_cercano = valor_cercano + 1]
 AI[residuo2 = residuo1 - 20 * raiz_cercana + valor_cercano * valor_cercano]
 AJ[raiz_n = raiz_cercana * 10+ valor_cercano + residuo2 / 2*raiz_cercana]
@@ -207,6 +209,7 @@ R -- no --> S
 S -- si --> T
 T --> R
 R -- si --> U
+
 U --> V
 V -- no --> W
 W --> X
@@ -217,14 +220,15 @@ Y --> Z
 
 
 L -- no --> AA
-AA -- no --> AB
-AB -- si --> AC
-AC --> AA
-AA -- si --> AD
-AD --> AE
-AE -- no --> AF
-AF --> AG
-AG --> AF
+AA --> AB
+AB -- no --> AC
+AC -- si --> AD
+AD --> AB
+AB -- si --> AE
+AE --> AF
+AF -- no --> AG
+AG --> AH
+AH --> AF
 AF -- si --> AI
 AI --> AJ
 ```
