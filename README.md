@@ -32,7 +32,8 @@ Inicio
 Fin
 ```
 ```mermaid
-flowchart TD;
+Graph TD
+
     A(inicio)
     B[Leer número n]
     C[i = 2]
