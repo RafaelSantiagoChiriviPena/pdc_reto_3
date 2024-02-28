@@ -60,7 +60,6 @@ flowchart TD;
     J --> K 
     K -- no | i + 1 --> G
     K -- si --> L
-END
 ```
 
 ```pseudocode
