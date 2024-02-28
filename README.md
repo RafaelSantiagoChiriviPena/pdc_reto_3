@@ -31,7 +31,7 @@ Inicio
     Fin Para
 Fin
 ```
-```mermaid
+```Mermaid
 graph TD;
     A(inicio);
     B[Leer número n];
@@ -66,6 +66,13 @@ graph TD;
 n : entero
 raiz_cercana : entero
 valor_cercano : entero
+divisor : entero
+numero_digitos_n : entero
+digito_1_n : entero
+residuo1 : entero
+residuo2 : entero
+raiz_n : entero
+2_digitos_n : entero
 Inicio
     raiz_cercana := 1
     valor_cercano := 1
@@ -73,12 +80,12 @@ Inicio
     numero_digitos_n := 1
     leer n
     digito_1_n := n // divisor
-    Mientras ( m > 1) hacer
+    Mientras ( digito_1_n > 1) hacer
         numero_digitos_n = numero_digitos_n + 1
         divisor := divisor * 10
     Fin mientras
     Si numero_digitos_n > 2 entonces
-            Si modulo (numero_digitos, 2) = 1 entonces
+            Si modulo (numero_digitos_n, 2) = 1 entonces
                 Mientras (raiz_cercana < (digito_1_n^0.5)) hacer
                     Si ((digito_1_n - (raiz_cercana^2)) > 0) entonces
                         raiz_cercana = raiz_cercana + 1
