@@ -32,7 +32,7 @@ Inicio
 Fin
 ```
 ```mermaid
-flowchart TD;
+graph TD;
     A(inicio)
     B[Leer número n]
     C[i = 2]
@@ -46,12 +46,12 @@ flowchart TD;
     K{¿i = n?}
     L(fin)
 
-    A --> B;
-    B --> C;
-    C --> D;
-    D --> E;
-    E --> F;
-    F -- para todo i-->  G;
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -- para todo i-->  G
     G -- si --> H
     G -- no --> I
     H --> K
