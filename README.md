@@ -1,4 +1,6 @@
 # pdc_reto_3
+A continuacion, se mostrara el pseudocodigo y diagrama de flujo de los problemas planteados para este reto
+## Numeros primos hasta un natural n (pseudocodigo)
 ```pseudocode
 [Variables]
 n : entero 
@@ -31,6 +33,7 @@ Inicio
     Fin Para
 Fin
 ```
+## Numeros primos hasta un natural n (diagrama de flujo / flujograma)
 ```mermaid
 graph TD;
 A(inicio)
@@ -61,7 +64,7 @@ J --> K
 K -- no | i + 1 --> G
 K -- si --> L
 ```
-
+## Raiz cuadrada de un numero n (pseudocodigo)
 ```pseudocode
 [Variables]
 n : entero
@@ -129,6 +132,7 @@ Inicio
     escribir("La raiz de " n " es aproximadamente " raiz_n)
 Fin
 ```
+## Raiz cuadrada de un numero n (diagrama de flujo / flujograma)
 ```mermaid
 flowchart TD
 A(inicio)
