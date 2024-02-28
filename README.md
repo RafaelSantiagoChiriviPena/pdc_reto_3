@@ -32,7 +32,10 @@ Inicio
 Fin
 ```
 ```mermaid
-graph TD;
+---
+title: primos hasta un natural
+---
+flowchart LR;
     A(inicio);
     B[Leer número n];
     C[i = 2];
