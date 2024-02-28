@@ -31,7 +31,7 @@ Inicio
     Fin Para
 Fin
 ```
-```mermaid
+``` mermaid
 flowchart TD;
     A(inicio);
     B[Leer número n];
